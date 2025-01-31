@@ -1,0 +1,163 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background: linear-gradient(135deg, #74ebd5 0%, #9face6 100%);
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-size: cover;
+}
+
+.container {
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 15px;
+  padding: 20px;
+  width: 350px;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  position: relative;
+}
+
+.weather_header {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.weather_search {
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 25px;
+  padding: 10px 15px;
+  width: 100%;
+}
+
+.weather_search input {
+  border: none;
+  padding: 8px 12px;
+  width: 85%;
+  font-size: 16px;
+  border-radius: 25px;
+  outline: none;
+}
+
+.weather_search input:focus {
+  background-color: #e6f7ff;
+}
+
+.weather_search i {
+  color: #007bff;
+  margin-right: 10px;
+}
+
+.weather_body {
+  margin-top: 20px;
+}
+
+.weather_city {
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.weather_date_time {
+  font-size: 14px;
+  margin: 5px 0;
+  color: #dcdcdc;
+}
+
+.weather_icon img {
+  width: 70px;
+  height: 70px;
+  margin: 10px 0;
+}
+
+.weather_temperature {
+  font-size: 45px;
+  font-weight: bold;
+}
+
+.weather_minmax {
+  display: flex;
+  justify-content: space-between;
+  font-size: 16px;
+  margin-top: 15px;
+}
+
+.weather_min,
+.weather_max {
+  color: #dcdcdc;
+}
+
+.weather_info {
+  margin-top: 25px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+}
+
+.weather_card,
+.weather_humidity,
+.weather_wind,
+.weather_pressure {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  transition: all 0.3s ease;
+}
+
+.weather_card:hover,
+.weather_humidity:hover,
+.weather_wind:hover,
+.weather_pressure:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.weather_card p,
+.weather_humidity p,
+.weather_wind p,
+.weather_pressure p {
+  color: #fff;
+}
+
+.weather_card i,
+.weather_humidity i,
+.weather_wind i,
+.weather_pressure i {
+  color: #fff;
+  font-size: 18px;
+}
+
+.weather_info div p {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.weather_feelsLike,
+.weather_humidity,
+.weather_wind,
+.weather_pressure {
+  font-size: 18px;
+  font-weight: 700;
+  color: #f1f1f1;
+}
+
+@media (max-width: 768px) {
+  .container {
+      width: 90%;
+  }
+
+  .weather_info {
+      grid-template-columns: 1fr;
+  }
+}
