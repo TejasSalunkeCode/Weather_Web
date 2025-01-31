@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="container">
+        <div class="weather_header">
+            <form class="weather_search">
+                <input type="text" class="city_name" placeholder="Enter city name" />
+                <button type="submit">Search</button>
+            </form>
+        </div>
+
+        <div class="weather_body">
+            <div class="weather_city">City Name</div>
+            <div class="weather_date_time">Date and Time</div>
+            <div class="weather_icon">
+                <img src="" alt="Weather Icon">
+            </div>
+            <div class="weather_temperature">Temperature</div>
+            <div class="weather_minmax">
+                <div class="weather_min">Min: 20&#176;</div>
+                <div class="weather_max">Max: 25&#176;</div>
+            </div>
+
+            <div class="weather_info">
+                <div class="weather_card">
+                    <p>Feels Like</p>
+                    <p class="weather_feelsLike">25&#176;</p>
+                </div>
+                <div class="weather_humidity">
+                    <p>Humidity</p>
+                    <p>50%</p>
+                </div>
+                <div class="weather_wind">
+                    <p>Wind Speed</p>
+                    <p>5 m/s</p>
+                </div>
+                <div class="weather_pressure">
+                    <p>Pressure</p>
+                    <p>1012 hPa</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="weathercode.js"></script>
+</body>
+</html>
